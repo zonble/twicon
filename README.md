@@ -1,14 +1,30 @@
 # twicon
 
-Icons for Tiawan
+twicon helps to integrate [free icons](https://www.twicon.page/icons.html) of
+Taiwan from [TW Icon Fonts](https://www.twicon.page), into your Flutter apps,
 
-## Getting Started
+These free icons are covering the topics like sights, products, traffic and so
+on. They let you to promote your favorite places and cuisines in Taiwan easily
+within your apps.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+These icons are designed by a Japanese designer, holoko, and an English designer
+Rob. For further information, please visit [TW Icon Fonts](https://www.twicon.page).
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+Adds `twicon` to your pubspec file, run `futter packages get`, then you can
+import the package:
+
+``` dart
+import 'package:twicon/twicon.dart';
+```
+
+Then you can use these icons in widgets like `Icon`, `IconButton` and so on:
+
+``` dart
+Icon(TaiwanIcons.taipei101),
+```
+
+You can also run the example project, to see view the icons included.
+
+![screenshot.png](screenshot.png)
