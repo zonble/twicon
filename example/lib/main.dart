@@ -62,35 +62,103 @@ class _MyHomePageState extends State<MyHomePage> {
       Item(TaiwanIcons.fort_zeelandia, 'Fort Zeelandia'),
       Item(TaiwanIcons.eternal_golden_castle, 'Eternal Golden Castle'),
       Item(TaiwanIcons.fort_provintia, 'Fort Provintia'),
+      Item(TaiwanIcons.yoichi_hatta_statue, 'Statue of Yoichi Hatta'),
+      Item(TaiwanIcons.the_85_sky_tower, '85 Sky Tower'),
+      Item(TaiwanIcons.formosa_boulevard_station, 'Formosa Boulevard Station'),
+      Item(TaiwanIcons.dragon_and_tiger_pagoda, 'Dragon and Tiger Pagoda'),
+      Item(TaiwanIcons.rosary_catholic_church, 'Rosary Catholic Church'),
+      Item(TaiwanIcons.longteng_bridge, 'Longteng Bridge'),
+      Item(TaiwanIcons.lanyang_museum, 'Lanyang Museum'),
+      Item(TaiwanIcons.tamsui_lovers_bridge, 'Tamsui Lover\'s Bridge'),
+      Item(TaiwanIcons.beitou_hotspring_museum, 'Beitou Hot Spring Museum'),
+      Item(TaiwanIcons.tunghai_university, 'Tunghai University'),
+      Item(TaiwanIcons.taichung_park, 'Taichung Park'),
+      Item(TaiwanIcons.queens_head, 'Queen\'s Head'),
+      Item(TaiwanIcons.national_taichung_theater, 'National Taichung Theater'),
+      Item(TaiwanIcons.bagua_mountain_buddha, 'Buddha in Bagua Mountain'),
+      Item(TaiwanIcons.fo_guang_shan_temple, 'Fo Guang Shan Temple'),
+      Item(TaiwanIcons.vase_rock, 'Vase Rock'),
+      Item(TaiwanIcons.tropic_of_cancer, 'Tropic of Cancer'),
+      Item(TaiwanIcons.fuguijiao_lighthouse, 'Fuguijiao Lighthouse'),
+      Item(TaiwanIcons.yuwengdao_lighthouse, 'Yuwengdao Lighthouse'),
+      Item(TaiwanIcons.eluanbi_lighthouse, 'Eluanbi Lighthouse'),
+      Item(TaiwanIcons.kano_statue, 'Statue of Kano'),
+      Item(TaiwanIcons.ershawan_battery, 'Ershawan Battery'),
+      Item(TaiwanIcons.chinese_bridge, 'Chinese Bridge'),
+      Item(TaiwanIcons.balloon, 'Balloon'),
+      Item(TaiwanIcons.taiwan_railways, 'Taiwan Railways'),
+      Item(TaiwanIcons.taipei_mrt, 'Taipei MRT'),
+      Item(TaiwanIcons.alishan_forest_railway, 'Alishan Forest Railway'),
+      Item(TaiwanIcons.taiwan_high_speed_rail, 'Taiwan High Speed Rail'),
+      Item(TaiwanIcons.maokong_gondola, 'Maokong Gondola'),
+      Item(TaiwanIcons.youbike, 'YouBike'),
+      Item(TaiwanIcons.yamis_fishing_boat, 'YouBiYami\'s Fishing Boatke'),
+      Item(TaiwanIcons.dragon_boat, 'Dragon Boat'),
+      Item(TaiwanIcons.lantern1, 'Lantern 1'),
+      Item(TaiwanIcons.lantern2, 'Lantern 2'),
+      Item(TaiwanIcons.sky_lantern, 'Sky Lantern'),
+      Item(TaiwanIcons.taiwanese_bag, 'Taiwanese Bag'),
+      Item(TaiwanIcons.postbox, 'Postbox'),
+      Item(TaiwanIcons.inclined_postbox, 'Inclined Postbox'),
+      Item(TaiwanIcons.jug, 'Jug'),
+      Item(TaiwanIcons.tea_pot, 'Tea pot'),
+      Item(TaiwanIcons.tapioca_milk_tea, 'Tapioca Milk Tea'),
+      Item(TaiwanIcons.taiwan_beer, 'Taiwan Beer'),
+      Item(TaiwanIcons.apple_cider, 'Apple Cider'),
+      Item(TaiwanIcons.spring_couplets, 'Spring couplets'),
+      Item(TaiwanIcons.fortune, 'Fortune'),
+      Item(TaiwanIcons.electric_pot, 'Electric pot'),
+      Item(TaiwanIcons.slipper, 'Slipper'),
+      Item(TaiwanIcons.flying_fish, 'Flying fish'),
+      Item(TaiwanIcons.asiatic_black_bear, 'Asiatic black bear'),
+      Item(TaiwanIcons.trash, 'Trash'),
+      Item(TaiwanIcons.recycling, 'Recycling'),
+      Item(TaiwanIcons.turn_queue_box, 'Turn Queue Box'),
+      Item(TaiwanIcons.bicycle_lane, 'Bicycle lane'),
+      Item(TaiwanIcons.red_man, 'Red Man'),
+      Item(TaiwanIcons.green_man, 'Green Man'),
+      Item(TaiwanIcons.health_insurance, 'Health Insurance'),
+      Item(TaiwanIcons.logo_pixnet, 'PIXNET'),
+      Item(TaiwanIcons.logo_17_live, '17 Live'),
+      Item(TaiwanIcons.logo_wemo, 'WeMo'),
+      Item(TaiwanIcons.logo_dcard, 'Dcard'),
+      Item(TaiwanIcons.logo_easy_card, 'Easy Card'),
+      Item(TaiwanIcons.logo_ipass, 'iPASS'),
+      Item(TaiwanIcons.logo_youbike, 'YouBike'),
+      Item(TaiwanIcons.logo_luxgen, 'Luxgen'),
+      Item(TaiwanIcons.logo_post, 'Post'),
+      Item(TaiwanIcons.logo_taiwan_railways, 'Taiwan Railways'),
+      Item(TaiwanIcons.logo_taipei_mrt, 'Taipei MRT'),
+      Item(TaiwanIcons.logo_kaohsiung_mrt, 'Kaohsiung MRT'),
     ];
 
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
-      body: ListView.builder(
-          itemBuilder: (context, index) {
-            var item = items[index];
-            return SafeArea(
-              top: false,
-              bottom: false,
-              child: Row(
-                children: <Widget>[
-                  SizedBox(width: 10),
-                  Container(
-                    width: 55,
-                    height: 55,
-                    child: Icon(
-                      item.icon,
-                      size: 32,
-                      color: Colors.black,
+      body: Scrollbar(
+        child: ListView.builder(
+            itemBuilder: (context, index) {
+              var item = items[index];
+              return SafeArea(
+                top: false,
+                bottom: false,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(width: 20),
+                    Text('${index + 1}'),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      child: Icon(item.icon, size: 60, color: Colors.black),
                     ),
-                  ),
-                  SizedBox(width: 10),
-                  Text(item.title),
-                ],
-              ),
-            );
-          },
-          itemCount: items.length),
+                    SizedBox(width: 10),
+                    Flexible(child: Text(item.title)),
+                  ],
+                ),
+              );
+            },
+            itemCount: items.length),
+      ),
     );
   }
 }

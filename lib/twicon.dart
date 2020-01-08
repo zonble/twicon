@@ -249,7 +249,7 @@ class TaiwanIcons {
   static const IconData tamsui_lovers_bridge =
       const IconData(0xA027, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Beitou Hotspring Museum
+  /// Beitou Hot Spring Museum
   /// 北投溫泉博物館
   /// 北投温泉記念館
   static const IconData beitou_hotspring_museum =
@@ -261,6 +261,7 @@ class TaiwanIcons {
   static const IconData tunghai_university =
       const IconData(0xA029, fontFamily: _kFontFam, fontPackage: _kPackage);
 
+  /// Taichung Park
   /// 國立台中公園
   /// 国立台中公園湖心亭
   static const IconData taichung_park =
@@ -380,13 +381,13 @@ class TaiwanIcons {
   static const IconData youbike =
       const IconData(0xA03D, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Yami's Fishing Boat
+  /// Yami's fishing boat
   /// 雅美族舟艇
   /// ヤミ族のボート
   static const IconData yamis_fishing_boat =
       const IconData(0xA03E, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Dragon Boat
+  /// Dragon boat
   /// 龍舟
   /// ドラゴンボート
   static const IconData dragon_boat =
@@ -404,13 +405,13 @@ class TaiwanIcons {
   static const IconData lantern2 =
       const IconData(0xA041, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Sky Lantern
+  /// Sky lantern
   /// 天燈
   /// 天灯
   static const IconData sky_lantern =
       const IconData(0xA042, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Taiwanese Bag
+  /// Taiwanese bag
   /// 茄芷袋
   /// ナイロンバッグ
   static const IconData taiwanese_bag =
@@ -422,7 +423,7 @@ class TaiwanIcons {
   static const IconData postbox =
       const IconData(0xA044, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Inclined Postbox
+  /// Inclined postbox
   /// 歪腰郵筒
   /// 傾いたポスト
   static const IconData inclined_postbox =
@@ -434,13 +435,13 @@ class TaiwanIcons {
   static const IconData jug =
       const IconData(0xA046, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Tea Pot
+  /// Tea pot
   /// 茶具
   /// 茶器
   static const IconData tea_pot =
       const IconData(0xA047, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Tapioca Milk Tea
+  /// Tapioca milk tea
   /// 珍珠奶茶
   /// タピオカミルクティー
   static const IconData tapioca_milk_tea =
@@ -458,7 +459,7 @@ class TaiwanIcons {
   static const IconData apple_cider =
       const IconData(0xA04A, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Spring Couplets
+  /// Spring couplets
   /// 春聯
   /// 春聯
   static const IconData spring_couplets =
@@ -470,7 +471,7 @@ class TaiwanIcons {
   static const IconData fortune =
       const IconData(0xA04C, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Electric Pot
+  /// Electric pot
   /// 大同電鍋
   /// 大同電鍋
   static const IconData electric_pot =
@@ -488,7 +489,7 @@ class TaiwanIcons {
   static const IconData flying_fish =
       const IconData(0xA04F, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Asiatic Black Bear
+  /// Asiatic black bear
   /// 台灣黑熊
   /// ツキノワグマ
   static const IconData asiatic_black_bear =
@@ -512,7 +513,7 @@ class TaiwanIcons {
   static const IconData turn_queue_box =
       const IconData(0xA053, fontFamily: _kFontFam, fontPackage: _kPackage);
 
-  /// Bicycle Lane
+  /// Bicycle lane
   /// 自行車道
   /// 自転車道
   static const IconData bicycle_lane =
