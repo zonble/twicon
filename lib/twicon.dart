@@ -200,4 +200,407 @@ class TaiwanIcons {
   /// 赤カン楼
   static const IconData fort_provintia =
       const IconData(0xA01F, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Statue of Yoichi Hatta
+  /// 八田與一雕像
+  /// 八田與一像
+  static const IconData yoichi_hatta_statue =
+      const IconData(0xA020, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// The 85 Sky Tower
+  /// 高雄85大樓
+  /// 高雄85ビル
+  static const IconData the_85_sky_tower =
+      const IconData(0xA021, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Formosa Boulevard Station
+  /// 美麗島站
+  /// 美麗島駅
+  static const IconData formosa_boulevard_station =
+      const IconData(0xA022, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Dragon and Tiger Pagoda
+  /// 蓮池潭老虎塔
+  /// 蓮池潭老虎塔
+  static const IconData dragon_and_tiger_pagoda =
+      const IconData(0xA023, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Rosary Catholic Church
+  /// 天主教玫瑰堂
+  /// ロザリオ大聖堂
+  static const IconData rosary_catholic_church =
+      const IconData(0xA024, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Longteng Bridge
+  /// 龍騰断橋
+  /// 龍騰断橋
+  static const IconData longteng_bridge =
+      const IconData(0xA025, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Lanyang Museum
+  /// 蘭陽博物館
+  /// 蘭陽博物館
+  static const IconData lanyang_museum =
+      const IconData(0xA026, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Tamsui Lover's Bridge
+  /// 情人橋
+  /// 情人橋
+  static const IconData tamsui_lovers_bridge =
+      const IconData(0xA027, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Beitou Hotspring Museum
+  /// 北投溫泉博物館
+  /// 北投温泉記念館
+  static const IconData beitou_hotspring_museum =
+      const IconData(0xA028, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Tunghai University
+  /// 東海大學
+  /// 東海大学
+  static const IconData tunghai_university =
+      const IconData(0xA029, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// 國立台中公園
+  /// 国立台中公園湖心亭
+  static const IconData taichung_park =
+      const IconData(0xA02A, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Queen's Head
+  /// 女王頭
+  /// クイーンズヘッド
+  static const IconData queens_head =
+      const IconData(0xA02B, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// National Taichung Theater
+  /// 臺中國家歌劇院
+  /// 台中国家歌劇院
+  static const IconData national_taichung_theater =
+      const IconData(0xA02C, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Buddha in Bagua Mountain
+  /// 八卦山大佛
+  /// 八卦山大仏
+  static const IconData bagua_mountain_buddha =
+      const IconData(0xA02D, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Fo Guang Shan Temple
+  /// 佛光山寺
+  /// 佛光山寺
+  static const IconData fo_guang_shan_temple =
+      const IconData(0xA02E, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Vase Rock
+  /// 花瓶石
+  /// 花瓶石
+  static const IconData vase_rock =
+      const IconData(0xA02F, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Tropic of Cancer
+  /// 北迴歸線標牌
+  /// 静浦北回帰線標誌
+  static const IconData tropic_of_cancer =
+      const IconData(0xA030, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Fuguijiao Lighthouse
+  /// 富貴角燈塔
+  /// 富貴角灯台
+  static const IconData fuguijiao_lighthouse =
+      const IconData(0xA031, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Yuwengdao Lighthouse
+  /// 漁翁島燈塔
+  /// 漁翁島灯台
+  static const IconData yuwengdao_lighthouse =
+      const IconData(0xA032, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Eluanbi Lighthouse
+  /// 鵝鑾鼻燈塔
+  /// ガランビ灯台
+  static const IconData eluanbi_lighthouse =
+      const IconData(0xA033, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Statue of Kano
+  /// 嘉農棒球隊銅像
+  /// 嘉義カノウ像
+  static const IconData kano_statue =
+      const IconData(0xA034, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Ershawan Battery
+  /// 二沙灣砲臺
+  /// 二沙湾砲台
+  static const IconData ershawan_battery =
+      const IconData(0xA035, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Chinese Bridge
+  /// 中華橋
+  /// 中華橋
+  static const IconData chinese_bridge =
+      const IconData(0xA036, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Balloon
+  /// 熱氣球
+  /// 熱氣球
+  static const IconData balloon =
+      const IconData(0xA037, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taiwan Railways
+  /// 台鐵
+  /// 台湾鉄道
+  static const IconData taiwan_railways =
+      const IconData(0xA038, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taipei MRT
+  /// 台北捷運
+  /// 台北 MRT
+  static const IconData taipei_mrt =
+      const IconData(0xA039, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Alishan Forest Railway
+  /// 阿里山林業鐵路
+  /// 阿里山森林鉄路
+  static const IconData alishan_forest_railway =
+      const IconData(0xA03A, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taiwan High Speed Rail
+  /// 高鐵
+  /// 高速鉄道
+  static const IconData taiwan_high_speed_rail =
+      const IconData(0xA03B, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Maokong Gondola
+  /// 貓空纜車
+  /// 猫空ロープウェイ
+  static const IconData maokong_gondola =
+      const IconData(0xA03C, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// YouBike
+  /// 微笑單車
+  /// YouBike
+  static const IconData youbike =
+      const IconData(0xA03D, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Yami's Fishing Boat
+  /// 雅美族舟艇
+  /// ヤミ族のボート
+  static const IconData yamis_fishing_boat =
+      const IconData(0xA03E, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Dragon Boat
+  /// 龍舟
+  /// ドラゴンボート
+  static const IconData dragon_boat =
+      const IconData(0xA03F, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Lantern 1
+  /// 紙燈籠1
+  /// 提灯1
+  static const IconData lantern1 =
+      const IconData(0xA040, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Lantern 2
+  /// 紙燈籠2
+  /// 提灯2
+  static const IconData lantern2 =
+      const IconData(0xA041, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Sky Lantern
+  /// 天燈
+  /// 天灯
+  static const IconData sky_lantern =
+      const IconData(0xA042, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taiwanese Bag
+  /// 茄芷袋
+  /// ナイロンバッグ
+  static const IconData taiwanese_bag =
+      const IconData(0xA043, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Postbox
+  /// 郵筒
+  /// ポスト
+  static const IconData postbox =
+      const IconData(0xA044, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Inclined Postbox
+  /// 歪腰郵筒
+  /// 傾いたポスト
+  static const IconData inclined_postbox =
+      const IconData(0xA045, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Jug
+  /// 酒壇
+  /// 酒壺
+  static const IconData jug =
+      const IconData(0xA046, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Tea Pot
+  /// 茶具
+  /// 茶器
+  static const IconData tea_pot =
+      const IconData(0xA047, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Tapioca Milk Tea
+  /// 珍珠奶茶
+  /// タピオカミルクティー
+  static const IconData tapioca_milk_tea =
+      const IconData(0xA048, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taiwan Beer
+  /// 台灣啤酒
+  /// 台湾ビール
+  static const IconData taiwan_beer =
+      const IconData(0xA049, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Apple Cider
+  /// 蘋果西打
+  /// アップルサイダー
+  static const IconData apple_cider =
+      const IconData(0xA04A, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Spring Couplets
+  /// 春聯
+  /// 春聯
+  static const IconData spring_couplets =
+      const IconData(0xA04B, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Fortune
+  /// 筊
+  /// おみくじ
+  static const IconData fortune =
+      const IconData(0xA04C, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Electric Pot
+  /// 大同電鍋
+  /// 大同電鍋
+  static const IconData electric_pot =
+      const IconData(0xA04D, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Slipper
+  /// 拖鞋
+  /// スリッパ
+  static const IconData slipper =
+      const IconData(0xA04E, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Flying fish
+  /// 飛魚
+  /// トビウオ
+  static const IconData flying_fish =
+      const IconData(0xA04F, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Asiatic Black Bear
+  /// 台灣黑熊
+  /// ツキノワグマ
+  static const IconData asiatic_black_bear =
+      const IconData(0xA050, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Trash
+  /// 一般垃圾
+  /// 一般ゴミ
+  static const IconData trash =
+      const IconData(0xA051, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Recycling
+  /// 資源回收
+  /// リサイクル
+  static const IconData recycling =
+      const IconData(0xA052, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Turn Queue Box
+  /// 機車停等區
+  /// 自動二輪停車区
+  static const IconData turn_queue_box =
+      const IconData(0xA053, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Bicycle Lane
+  /// 自行車道
+  /// 自転車道
+  static const IconData bicycle_lane =
+      const IconData(0xA054, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Red Man
+  /// 小紅人
+  /// 赤信号の人
+  static const IconData red_man =
+      const IconData(0xA055, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Green Man
+  /// 小綠人
+  /// 青信号の人
+  static const IconData green_man =
+      const IconData(0xA056, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Health Insurance
+  /// 全民健康保險
+  /// 全民健康保険
+  static const IconData health_insurance =
+      const IconData(0xA057, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// PIXNET
+  /// 痞客邦
+  /// PIXNET
+  static const IconData logo_pixnet =
+      const IconData(0xA058, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// 17 Live
+  /// 17 直播
+  /// 17 Live
+  static const IconData logo_17_live =
+      const IconData(0xA059, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// WeMo
+  static const IconData logo_wemo =
+      const IconData(0xA05A, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Dcard
+  static const IconData logo_dcard =
+      const IconData(0xA05B, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Easy Card
+  /// 悠遊卡
+  /// 悠遊卡
+  static const IconData logo_easy_card =
+      const IconData(0xA05C, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// iPASS
+  /// 一卡通
+  /// 一卡通
+  static const IconData logo_ipass =
+      const IconData(0xA05D, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// YouBike
+  /// 微笑單車
+  /// YouBike
+  static const IconData logo_youbike =
+      const IconData(0xA05E, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Luxgen
+  /// 納智捷
+  /// Luxgen
+  static const IconData logo_luxgen =
+      const IconData(0xA05F, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Post
+  /// 台灣郵政
+  /// 台湾郵政
+  static const IconData logo_post =
+      const IconData(0xA060, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taiwan Railways
+  /// 台鐵
+  /// 台湾鉄道
+  static const IconData logo_taiwan_railways =
+      const IconData(0xA061, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Taipei MRT
+  /// 台北捷運
+  /// 台北 MRT
+  static const IconData logo_taipei_mrt =
+      const IconData(0xA062, fontFamily: _kFontFam, fontPackage: _kPackage);
+
+  /// Kaohsiung MRT
+  /// 高雄捷運
+  /// 高雄 MRT
+  static const IconData logo_kaohsiung_mrt =
+      const IconData(0xA063, fontFamily: _kFontFam, fontPackage: _kPackage);
 }
