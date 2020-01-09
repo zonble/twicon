@@ -1,14 +1,15 @@
 # twicon
 
-twicon helps to integrate [free icons](https://www.twicon.page/icons.html) of
-Taiwan from [TW Icon Fonts](https://www.twicon.page), into your Flutter apps,
+twicon helps to integrate [TW Icon Fonts](https://www.twicon.page), into your
+Flutter apps,
 
-These free icons are covering the topics like sights, products, traffic and so
-on. They let you to promote your favorite places and cuisines in Taiwan easily
-within your apps.
+TW Icon Fonts consist of [free icons](https://www.twicon.page/icons.html)
+covering topics like sights, products, traffic and so on. They let you to
+promote your favorite places and cuisines in Taiwan easily.
 
-These icons are designed by a Japanese designer, holoko, and an English designer
-Rob. For further information, please visit [TW Icon Fonts](https://www.twicon.page).
+The icons are designed by a Japanese designer, holoko, and an English designer
+Rob. They are both living in Taiwan right now. For further information, please
+visit [TW Icon Fonts](https://www.twicon.page).
 
 ## Usage
 
@@ -25,6 +26,6 @@ Then you can use these icons in widgets like `Icon`, `IconButton` and so on:
 Icon(TaiwanIcons.taipei101),
 ```
 
-You can also run the example project, to see view the icons included.
+You can also run the example project, to view the icons included.
 
-![screenshot.png](screenshot.png)
+![screenshot.png](https://raw.githubusercontent.com/zonble/twicon/master/screenshot.png)
