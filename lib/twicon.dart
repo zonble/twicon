@@ -1,8 +1,15 @@
+/// The free icons of Taiwan.
 library twicon;
 
 import 'package:flutter/widgets.dart';
 
-/// A set of icons for Taiwan.
+/// A set of free icons for Taiwan.
+///
+/// You can use these icons in widgets like `Icon`, `IconButton` and so on.
+///
+/// ``` dart
+/// Icon(TaiwanIcons.taipei101);
+/// ```
 class TaiwanIcons {
   TaiwanIcons._();
 

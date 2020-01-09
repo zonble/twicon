@@ -23,7 +23,7 @@ import 'package:twicon/twicon.dart';
 Then you can use these icons in widgets like `Icon`, `IconButton` and so on:
 
 ``` dart
-Icon(TaiwanIcons.taipei101),
+Icon(TaiwanIcons.taipei101);
 ```
 
 You can also run the example project, to view the icons included.
