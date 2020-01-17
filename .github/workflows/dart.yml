@@ -22,6 +22,9 @@ jobs:
     - name: Install dependencies
       run: flutter packages get
       working-directory: ./example
+    - name: Enable Web
+      run: flutter config --enable-web
+      working-directory: ./example
     - name: Build Web
       run: flutter build web
       working-directory: ./example
