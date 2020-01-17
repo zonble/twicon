@@ -15,15 +15,15 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
         flutter-version: '1.12.x' # you can use 1.12
-        channel: 'beta' # optional, default to: 'stable'
+        channel: 'beta' # Currently you have to use beta channel for Flutter web.
     - name: Upgrades flutter
       run: flutter upgrade
       working-directory: ./example
-    - name: Install dependencies
-      run: flutter packages get
-      working-directory: ./example
     - name: Enable Web
       run: flutter config --enable-web
+      working-directory: ./example
+    - name: Install dependencies
+      run: flutter packages get
       working-directory: ./example
     - name: Build Web
       run: flutter build web
