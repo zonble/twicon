@@ -134,30 +134,90 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
-      body: Scrollbar(
-        child: ListView.builder(
-            itemBuilder: (context, index) {
-              var item = items[index];
-              return SafeArea(
-                top: false,
-                bottom: false,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+      body: Container(
+        color: Colors.black26,
+        child: Scrollbar(
+          child: CustomScrollView(
+            slivers: <Widget>[
+              SliverPadding(
+                  padding: const EdgeInsets.only(
+                      top: 20, left: 10, right: 10, bottom: 0),
+                  sliver: SliverToBoxAdapter(
+                      child: Text(
+                    'This is the list of the icons contained in "twicon" package.',
+                    style: Theme.of(context).textTheme.title,
+                  ))),
+              SliverPadding(
+                padding: const EdgeInsets.all(10),
+                sliver: SliverGrid(
+                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                    maxCrossAxisExtent: 300,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 10,
+                  ),
+                  delegate: SliverChildBuilderDelegate((context, index) {
+                    var item = items[index];
+                    return IconCard(item: item, index: index);
+                  }, childCount: items.length),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class IconCard extends StatelessWidget {
+  const IconCard({
+    Key key,
+    @required this.item,
+    @required this.index,
+  }) : super(key: key);
+
+  final Item item;
+  final int index;
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: InkWell(
+        onTap: () {
+          showDialog(
+              context: context,
+              builder: (context) {
+                return SimpleDialog(
+                  title: Text('${index + 1} - ${item.title}'),
+                  contentPadding: const EdgeInsets.all(20),
                   children: <Widget>[
-                    SizedBox(width: 20),
-                    Text('${index + 1}'),
                     Container(
-                      width: 100,
-                      height: 100,
-                      child: Icon(item.icon, size: 60, color: Colors.black),
+                      width: 240,
+                      height: 240,
+                      child: Icon(item.icon, size: 200, color: Colors.black),
                     ),
                     SizedBox(width: 10),
-                    Flexible(child: Text(item.title)),
+                    RaisedButton(
+                      child: Text('Close'),
+                      onPressed: () => Navigator.of(context).pop(),
+                    )
                   ],
-                ),
-              );
-            },
-            itemCount: items.length),
+                );
+              });
+        },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              width: 140,
+              height: 140,
+              child: Icon(item.icon, size: 100, color: Colors.black),
+            ),
+            SizedBox(width: 10),
+            Flexible(child: Text('${index + 1} - ${item.title}')),
+          ],
+        ),
       ),
     );
   }
