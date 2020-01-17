@@ -11,6 +11,8 @@ The icons are designed by a Japanese designer, holoko, and an English designer
 Rob. They are both living in Taiwan right now. For further information, please
 visit [TW Icon Fonts](https://www.twicon.page).
 
+A Flutter example web app is available at https://zonble.github.io/twicon/#/.
+
 ## Usage
 
 Adds `twicon` to your pubspec file, run `futter packages get`, then you can
