@@ -17,7 +17,7 @@ jobs:
         flutter-version: '1.12.x' # you can use 1.12
         channel: 'beta' # optional, default to: 'stable'
     - name: Install dependencies
-      run: pub get
+      run: flutter packages get
       working-directory: ./example
     - name: Build Web
       run: flutter build web
