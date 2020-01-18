@@ -27,9 +27,9 @@ class _MyHomePageState extends State<MyHomePage> {
     var items = Item.all;
     return Scaffold(
         appBar: AppBar(title: Text(widget.title)),
-        body: Container(
-            color: Colors.black26,
-            child: Scrollbar(
+        body: Scrollbar(
+          child: Container(
+              color: Colors.black26,
               child: CustomScrollView(slivers: <Widget>[
                 SliverPadding(
                     padding: const EdgeInsets.only(
@@ -51,8 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               IconCard(item: items[index], index: index),
                           childCount: items.length),
                     ))
-              ]),
-            )));
+              ])),
+        ));
   }
 }
 

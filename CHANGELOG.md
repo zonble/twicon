@@ -1,3 +1,7 @@
+## 0.1.1+1
+
+* Updates the example.
+
 ## 0.1.1
 
 * Updates license and documentation.
