@@ -6,15 +6,11 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Taiwan Icons',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Taiwan Icons'),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        title: 'Taiwan Icons',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: MyHomePage(title: 'Taiwan Icons'),
+      );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -28,7 +24,91 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    var items = [
+    var items = Item.all;
+    return Scaffold(
+        appBar: AppBar(title: Text(widget.title)),
+        body: Container(
+            color: Colors.black26,
+            child: Scrollbar(
+              child: CustomScrollView(slivers: <Widget>[
+                SliverPadding(
+                    padding: const EdgeInsets.only(
+                        top: 20, left: 10, right: 10, bottom: 0),
+                    sliver: SliverToBoxAdapter(
+                        child: Text(
+                      'This is the list of the icons contained in "twicon" package.',
+                      style: Theme.of(context).textTheme.title,
+                    ))),
+                SliverPadding(
+                    padding: const EdgeInsets.all(10),
+                    sliver: SliverGrid(
+                      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 300,
+                          mainAxisSpacing: 10,
+                          crossAxisSpacing: 10),
+                      delegate: SliverChildBuilderDelegate(
+                          (context, index) =>
+                              IconCard(item: items[index], index: index),
+                          childCount: items.length),
+                    ))
+              ]),
+            )));
+  }
+}
+
+class IconCard extends StatelessWidget {
+  const IconCard({Key key, @required this.item, @required this.index})
+      : super(key: key);
+
+  final Item item;
+  final int index;
+
+  @override
+  Widget build(BuildContext context) => Card(
+        child: InkWell(
+          onTap: () => showDialog(
+              context: context,
+              builder: (context) => SimpleDialog(
+                    title: Text('${index + 1} - ${item.title}'),
+                    contentPadding: const EdgeInsets.all(20),
+                    children: <Widget>[
+                      Container(
+                        width: 240,
+                        height: 240,
+                        child: Icon(item.icon, size: 200, color: Colors.black),
+                      ),
+                      SizedBox(width: 10),
+                      RaisedButton(
+                        child: Text('Close'),
+                        onPressed: () => Navigator.of(context).pop(),
+                      )
+                    ],
+                  )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                width: 140,
+                height: 140,
+                child: Icon(item.icon, size: 100, color: Colors.black),
+              ),
+              SizedBox(width: 10),
+              Flexible(child: Text('${index + 1} - ${item.title}')),
+            ],
+          ),
+        ),
+      );
+}
+
+class Item {
+  IconData icon;
+  String title;
+
+  Item(this.icon, this.title);
+
+  static get all {
+    return [
       Item(TaiwanIcons.td_flag, 'Taiwan Democracy Flag'),
       Item(TaiwanIcons.roc_flag, 'R.O.C Flag'),
       Item(TaiwanIcons.taiwan_main_island, 'Taiwan Main Island'),
@@ -92,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
       Item(TaiwanIcons.taiwan_high_speed_rail, 'Taiwan High Speed Rail'),
       Item(TaiwanIcons.maokong_gondola, 'Maokong Gondola'),
       Item(TaiwanIcons.youbike, 'YouBike'),
-      Item(TaiwanIcons.yamis_fishing_boat, 'YouBiYami\'s Fishing Boatke'),
+      Item(TaiwanIcons.yamis_fishing_boat, 'Yami\'s Fishing Boat'),
       Item(TaiwanIcons.dragon_boat, 'Dragon Boat'),
       Item(TaiwanIcons.lantern1, 'Lantern 1'),
       Item(TaiwanIcons.lantern2, 'Lantern 2'),
@@ -131,101 +211,5 @@ class _MyHomePageState extends State<MyHomePage> {
       Item(TaiwanIcons.logo_taipei_mrt, 'Taipei MRT'),
       Item(TaiwanIcons.logo_kaohsiung_mrt, 'Kaohsiung MRT'),
     ];
-
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
-      body: Container(
-        color: Colors.black26,
-        child: Scrollbar(
-          child: CustomScrollView(
-            slivers: <Widget>[
-              SliverPadding(
-                  padding: const EdgeInsets.only(
-                      top: 20, left: 10, right: 10, bottom: 0),
-                  sliver: SliverToBoxAdapter(
-                      child: Text(
-                    'This is the list of the icons contained in "twicon" package.',
-                    style: Theme.of(context).textTheme.title,
-                  ))),
-              SliverPadding(
-                padding: const EdgeInsets.all(10),
-                sliver: SliverGrid(
-                  gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                    maxCrossAxisExtent: 300,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10,
-                  ),
-                  delegate: SliverChildBuilderDelegate((context, index) {
-                    var item = items[index];
-                    return IconCard(item: item, index: index);
-                  }, childCount: items.length),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
   }
-}
-
-class IconCard extends StatelessWidget {
-  const IconCard({
-    Key key,
-    @required this.item,
-    @required this.index,
-  }) : super(key: key);
-
-  final Item item;
-  final int index;
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: InkWell(
-        onTap: () {
-          showDialog(
-              context: context,
-              builder: (context) {
-                return SimpleDialog(
-                  title: Text('${index + 1} - ${item.title}'),
-                  contentPadding: const EdgeInsets.all(20),
-                  children: <Widget>[
-                    Container(
-                      width: 240,
-                      height: 240,
-                      child: Icon(item.icon, size: 200, color: Colors.black),
-                    ),
-                    SizedBox(width: 10),
-                    RaisedButton(
-                      child: Text('Close'),
-                      onPressed: () => Navigator.of(context).pop(),
-                    )
-                  ],
-                );
-              });
-        },
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              width: 140,
-              height: 140,
-              child: Icon(item.icon, size: 100, color: Colors.black),
-            ),
-            SizedBox(width: 10),
-            Flexible(child: Text('${index + 1} - ${item.title}')),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class Item {
-  IconData icon;
-  String title;
-
-  Item(this.icon, this.title);
 }
