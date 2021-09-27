@@ -1,10 +1,10 @@
 name: twicon
 description: Free icons of Taiwan. The package contains a set of icons by a Japanese and an English designer, that coverts the themes like sights, products, traffic, etc, in Taiwan.
-version: 0.1.1+1
+version: 0.2.0
 homepage: https://github.com/zonble/twicon
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
