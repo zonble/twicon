@@ -4,7 +4,6 @@ import 'package:twicon/twicon.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) => MaterialApp(
         title: 'Taiwan Icons',
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({super.key, required this.title});
   final String title;
 
   @override
@@ -57,8 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class IconCard extends StatelessWidget {
-  const IconCard({Key key, @required this.item, @required this.index})
-      : super(key: key);
+  const IconCard({super.key, required this.item, required this.index});
 
   final Item item;
   final int index;
@@ -78,7 +76,7 @@ class IconCard extends StatelessWidget {
                         child: Icon(item.icon, size: 200, color: Colors.black),
                       ),
                       SizedBox(width: 10),
-                      RaisedButton(
+                      ElevatedButton(
                         child: Text('Close'),
                         onPressed: () => Navigator.of(context).pop(),
                       )
