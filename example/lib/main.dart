@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     sliver: SliverToBoxAdapter(
                         child: Text(
                       'This is the list of the icons contained in "twicon" package.',
-                      style: Theme.of(context).textTheme.headline5,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ))),
                 SliverPadding(
                     padding: const EdgeInsets.all(10),
